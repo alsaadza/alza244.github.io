@@ -1,0 +1,276 @@
+.github-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out
+}
+
+h1 {
+    margin: 0.5em;
+}
+
+#display-pattern {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.display-example {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#display-pattern span, .display-example span {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: .2em;
+    padding: 1em;
+    margin: 0.5em 1em 0.5em 0em;
+    background: linear-gradient(rgba(221,221,221,.2), white)
+}
+
+.display-example span:last-of-type {
+    border: 1.5px solid #0074D9;
+}
+
+#next-number {
+    width: 25em;
+    border: 1.5px solid;
+    font-size: 12pt;
+    border-radius: .35em;
+    padding: 1em .5em;
+    transition: all .3s ease-in;
+    border-color: #0074D9;
+    text-align: center;
+}
+
+#next-number:focus {
+    outline: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 3px #0074D9;
+}
+
+#hint {
+    display: none;   
+}
+
+#hint::before {
+    content: "Hint: ";
+    color: #0074D9;
+}
+
+#hint:empty::before {
+    content: "";
+}
+
+
+#answer {
+    display: none;   
+}
+
+#answer::before {
+    content: "Answer: ";
+    color: #0074D9;
+}
+
+#answer:empty::before {
+    content: "";
+}
+
+.button {
+    outline: none;
+    background: none;
+    width: 10em;
+    border-color: #0074D9;
+    border-width: 1.5pt;
+    color:white;
+    padding: 8pt;
+    border-radius: 1em;
+    background-color: #0074D9;
+    transition: all .3s ease-in;
+}
+
+.button:hover {
+    background: white;
+    color: #0074D9;
+}
+
+#next-button {
+    display: none;
+    margin-left: 1em;
+}
+
+#reveal-button {
+    display: none;
+    margin-top: 1em;
+}
+
+#how-to-container {    
+    border: 1.5px solid black;
+    padding: 10px;
+    width: 30%;
+    font-size: 13pt;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#how-to {
+    transition: .5s;
+}
+
+#how-to-container.hidden #how-to {
+    height: 0;
+    overflow: hidden;
+}
+
+#how-to h2 {
+    text-align: center;
+}
+
+#hide-instructions {
+    text-decoration: none;
+    color: #d96500;
+}
+
+#how-to-container #hide-instructions:before {
+    content: "Hide "
+} 
+
+#how-to-container.hidden #hide-instructions:before {
+    content: "Show "
+} 
+
+#difficulty-level {
+    margin: 1em;
+}
+
+#difficulty {
+    display: inline-block;
+    padding: 0.25em 1em;
+    border-radius: .2em;
+    border: 1px solid inherit;
+}
+
+#difficulty:before {
+    content: "Integrate: ";
+}
+
+#difficulty.easy {
+    background-color: #ffdc00;
+    color: black;
+}
+
+#difficulty.easy:after {
+    content: "Easy";
+}
+
+#difficulty.medium {
+    background-color: #0074d9;
+    color: white;
+}
+
+#difficulty.medium:after {
+    content: "Medium";
+}
+
+#difficulty.hard {
+    background-color: #ff4136;
+    color: white;
+}
+
+#difficulty.hard:after {
+    content: "Hard";
+}
+
+#display-pattern-container {
+    margin: 0 1em 1em;
+    display: inline-block;
+}
+
+#button-container {
+    margin: 0 1em 1em;
+}
+
+#result-container, #counter-container{
+    margin: 0 1em;
+    font-size: 13pt;
+}
+
+#result-container div, #counter-container div {
+    margin: 0.5em 0;
+}
+
+#wins:before {
+    content: "Correct: "
+}
+
+#total-tries:before {
+    content: "Incorrect: "
+}
+
+@media (max-width: 992px) {
+    h1 {
+        margin: 0.5em 0;
+    }
+
+    #how-to-container {
+        position: relative;
+        width: auto;        
+        margin-bottom: 0.5em;
+    }
+
+    #display-pattern-container {
+        display: block;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #display-pattern {
+        display: inline;
+    }
+
+    #display-pattern span, .display-example span {
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+    #difficulty-level {
+        margin: 1em 0;
+    }
+
+    #next-number {
+        margin: 0.5em;
+    }
+
+    #button-container {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #button-container button{
+        margin: 0.5em;
+    }
+    
+    #result-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@keyframes octocat-wave {
+	0%, 100% {
+		transform:rotate(0)
+	}
+	20%, 60% {
+		transform:rotate(-25deg)
+	}
+	40%, 80% {
+		transform:rotate(10deg)
+	}
+}

@@ -1,0 +1,45 @@
+Series,Answer,Hint
+ (1/n),divergent,Consider the behavior of the harmonic series.
+ (1/n^2),convergent,Use the formula for the sum of a convergent series.
+ (1/(2n + 1)),divergent,Compare with a known divergent series.
+ (1/n^(3/2)),convergent,Apply the p-series test.
+ (1/n^3),convergent,Use the p-series test with p = 3.
+ (1/2^n),convergent,Recognize the geometric series.
+ (1/(n*(n+1))),convergent,Rewrite the series as telescoping.
+ ((-1)^n)/n,convergent,Apply the alternating series test.
+ (1/(n^2 + 1)),convergent,Use the comparison test with a known convergent series.
+ (1/(n^2 - 1)),divergent,Recognize the series as a telescoping series.
+ (1/(n^3 - 2n^2 + n)),divergent,Apply the comparison test with a known divergent series.
+ (n^2/3^n),convergent,Apply the ratio test.
+ (n^3/2^n),divergent,Apply the ratio test.
+ ((-1)^n * n^2)/(n^3 + 1),convergent,Use the comparison test with a known convergent series.
+ (n^2/n!),convergent,Apply the ratio test.
+ (1/(n ln(n))),divergent,Consider the integral test.
+ (1/(n^(1/3))),divergent,Use the comparison test with the harmonic series.
+ (1/(n^2 * ln(n))),divergent,Apply the integral test.
+ ((-1)^n * n)/(2^n),convergent,Apply the alternating series test.
+ (n^2/(n^3 + n)),divergent,Simplify the terms before applying a convergence test.
+ (1/(n^(1/n))),convergent,Apply the comparison test with a known convergent series.
+ (n^(1/n))/(2^n),convergent,Use the root test.
+ ((-1)^n * n)/(n^2 + 1),convergent,Apply the alternating series test.
+ (n!/n^3),divergent,Apply the ratio test.
+ (sin(n)/n^2),convergent,Apply Dirichlet's test.
+ (cos(n)/n^2),convergent,Apply Dirichlet's test.
+ (tan(n)/n^2),convergent,Apply Dirichlet's test.
+ (sin(n)/n^3),convergent,Apply Dirichlet's test.
+ (1/n^2 + cos(n)),divergent,Apply the divergence test or limit comparison test.
+ (1/(n^3 - n^2 + n)),divergent,Recognize the series as a telescoping series.
+ (n!/n^n),divergent,Apply the ratio test.
+ (1/(n! * ln(n))),divergent,Apply the integral test.
+ (sin(n)/(n^2 + 1)),convergent,Use the comparison test with a known convergent series.
+ (cos(n)/(n^2 + 1)),convergent,Use the comparison test with a known convergent series.
+ (tan(n)/(n^2 + 1)),convergent,Use the comparison test with a known convergent series.
+ (1/(n^2 + sin(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n^2 - cos(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n^2 + tan(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n^3 - sin(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n^3 + cos(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n^3 + tan(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n! + sin(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n! - cos(n))),convergent,Use the comparison test with a known convergent series.
+ (1/(n! + tan(n))),convergent,Use the comparison test with a known convergent series.
