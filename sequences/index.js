@@ -4,138 +4,74 @@ var display = document.getElementById("display-pattern");
 var result = document.getElementById("result");
 var nextButton = document.getElementById("next-button");
 var difficulty = document.getElementById("difficulty");
-
+var submitButton = document.getElementById("submit-button");
 var sound = new Audio("submit.wav");
 var sound_hint = new Audio("hint.wav");
 var answer = document.getElementById("answer");
 var tries = 0;
-var totalTries = 0;
+var totalTries = 1;
 var win = 0;
+var isProblem = false;
 
-var numbers = [];
-
-var randomFunctions = [addSquares, twiceAdded,subtractCube,cubedAdd,fibonacci, exponential_one, exponential_two, exponential_three, exponential_four, log_e];
-
-
-function addSquares() {
-
-    var randomFirst = Math.floor(Math.random()*9)+1;
-
-    numbers.push(randomFirst);
-
-    for (var i = 0; i < 9; i++) {
-
-        numbers.push(numbers[i]+Math.pow([i+1],2))
-    }
-
-    hint.innerHTML="Think of squares.";
-    difficulty.className = "easy";
-}
-
-function twiceAdded() {
-    var randomFirst = Math.floor(Math.random()*9)+1;
-    numbers.push(randomFirst);
-    for (var i = 0; i < 9; i++) {
-        numbers.push((2*numbers[i])+(i+1))
-    }
-    difficulty.className = "easy";
-}
-
-function subtractCube() {
-    var randomFirst = Math.floor(Math.random()*3)+1;
-    for (i = randomFirst; i < randomFirst+9; i++) {
-        numbers.push((Math.pow(i+1,3))-(i+1))
-    }
-    hint.innerHTML = "Try raising to the 3rd power.";
-    difficulty.className = "medium";
-}
-
-function cubedAdd() {
-    var randomFirst = Math.floor(Math.random()*3)+1;
-    for (i = randomFirst; i < randomFirst+9; i++) {
-        numbers.push((Math.pow(i+1,3))+((i+2)*(i+3)));
-    }
-    hint.innerHTML = "Think of cubes.";
-    difficulty.className = "medium";
-}
-
-function fibonacci() {
-    var randomFirst = Math.floor(Math.random()*9)+1;
-    numbers.push(randomFirst);
-    for (var i = 0; i < 9; i++) {
-        if(i===0) {
-            numbers.push(randomFirst+0)
-        } else {
-            numbers.push(numbers[i-1]+numbers[i])
+alert("This thing is still in beta. Please read the instructions!");
+// Function to fetch and parse a CSV file from a URL into a 2D array
+async function fetchAndParseCSV(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Failed to fetch CSV file');
         }
+        const csvData = await response.text();
+        const csvRows = csvData.trim().split('\n');
+        const csvArray = csvRows.map(row => row.split(','));
+        return csvArray;
+    } catch (error) {
+        console.error('Error fetching or parsing CSV:', error);
+        return null;
     }
-    difficulty.className = "easy";
 }
+var numbers = [];
+var problem = [];
+submitButton.innerHTML = "Generate Problem";
 
-function exponential_one() {
-    var x = Math.floor(Math.random()*20)+1;
-    let term = (n) => Math.pow((1 + (x/n)), n);
-    for (let i=0; i <= 9; i++){
-        num = toFixed(term(i), 2);       
-        numbers.push(num);
-    }
-    hint.innerHTML = "Do you know about exponential series? Try that.";
-    difficulty.className = "hard";
-}
+// Example usage
+const csvUrl = 'https://raw.githubusercontent.com/alza244/alza244.github.io/main/sequences.csv'; // URL of the CSV file
 
-function exponential_two() {
-    var n = Math.floor(Math.random()*9)+1;
-    let term = (i) => Math.pow(-1, n) * Math.pow(i, n);
-    for (let i=0; i < 9; i++) {
-        numbers.push(term(i));
-    }
-    hint.innerHTML = "Look again, think in powers.";
-    difficulty.className = "hard";
-}
-
-function exponential_three() {
-    let randomnum = Math.floor(Math.random() * 10) + 1;
-    for (let i=0; i<9; i++){
-        let power = i+1;
-        let value = Math.pow(randomnum, power) / power;
-        let rounded = toFixed(value, 2);
-        numbers.push(rounded);
-    }
-    hint.innerHTML = "A number is raised to the index and divided by the index.";
-    difficulty.className = "hard";;
-}
-
-function exponential_four() {
-    let randomnum = (Math.random() * 9) + 1;
-    for (let i=0; i<9; i++){
-        let value = Math.exp(-1/Math.pow(randomnum+i, 2));
-        let rounded = toFixed(value, 2);
-        numbers.push(rounded);
-    }
-    hint.innerHTML = "An exponential of a number. Can you see your mistake?";
-    difficulty.className = "hard";
-}
-
-function log_e() {
-    let randomnum = (Math.random() * 10) + 1;
-    for (let i=0; i<9; i++) {
-        let value = Math.log(randomnum+i)    
-        numbers.push(toFixed(value, 2));
-    }
-    hint.innerHTML = "Find out a random number added to index and try some log on the it. "
-    difficulty.className = "hard";
-}
-
-function toFixed( num, precision ) {        
-    return (+(Math.round(+(num + 'e' + precision)) + 'e' + -precision)).toFixed(precision);
-}
+fetchAndParseCSV(csvUrl)
+    .then(data => {
+        if (data) {
+            console.log('CSV data:', data);
+            // Here you can perform any operations with the parsed CSV data
+            numbers = data;
+            const randomIndex = Math.floor(Math.random()*83);
+            problem = data[randomIndex];
+            
+            console.log('numbers var:', numbers);
+            console.log('problem var:', problem);
+        } else {
+            console.error('No data fetched or parsed.');
+        }
+    });
 
 
-function callRandomFunction() {
-    const randomIndex = Math.floor(Math.random()*randomFunctions.length);
-    randomFunctions[randomIndex]();
+function newProblem(){
+fetchAndParseCSV(csvUrl)
+    .then(data => {
+        if (data) {
+            console.log('CSV data:', data);
+            // Here you can perform any operations with the parsed CSV data
+            numbers = data;
+            const randomIndex = Math.floor(Math.random()*83);
+            problem = data[randomIndex];
+            
+            console.log('numbers var:', numbers);
+            console.log('problem var:', problem);
+        } else {
+            console.error('No data fetched or parsed.');
+        }
+    });
 }
-callRandomFunction();
+
 
 
 function createSpan(element) {
@@ -145,33 +81,37 @@ function createSpan(element) {
 }
 
 
-function displayPattern() {
-    numbers.slice(0,-1).map(element => createSpan(element));
-}
-
-displayPattern();
-
 
 function guess() {
-    tries++;
-    totalTries++;
-    document.getElementById("total-tries").innerHTML = totalTries;
 
+if (!isProblem) {
+        difficulty.innerHTML = (problem[0]);
+		hint.innerHTML = (problem[2]);
+		isProblem = true;
+		submitButton.innerHTML = "Submit";
+    }
+else{
+	tries++;
+    document.getElementById("total-tries").innerHTML = totalTries;
+	
     if (tries == 3) {
         nextButton.style.display = "inline-block";
     }
 
 
-    
-    if (nextNumber.value == numbers[numbers.length-1]) {
+    var userInput = nextNumber.value
+    //If user answered correctly
+    if (problem[1].replace(/\s/g, '') == userInput.replace(/\s/g, '')) {
     	sound.play();
         win++;
         document.getElementById("wins").innerHTML = win;
-        result.innerHTML = "You guessed correctly!";
+        result.innerHTML = "Correct!";
         result.style.color="#74d900";
         hint.innerHTML = "";
         setTimeout(function(){ nextPattern(), nextNumber.value=""}, 1000);
     } else {
+    //If user answered incorrectly.
+    totalTries++;
         if (tries != 3 ) {
         	sound.play();
         }
@@ -184,7 +124,7 @@ function guess() {
         }
         if (tries >= 5 ) {
             revealButton.style.display = "block";
-            answer.innerHTML = (numbers[numbers.length-1]);
+            answer.innerHTML = (problem[1]);
         }
         result.innerHTML = "No, try again."
         result.style.color = "#d90074"
@@ -203,13 +143,14 @@ function guess() {
   options: {
     title: {
       display: true,
-      text: "Game Statistics"
+      text: "Statistics"
     }
   }
 });
 }
+}
 
-
+// Checks the users input when the Enter key is pressed
 nextNumber.onkeypress = function(event) {
     if (event.which == 13 || event.keyCode == 13) {
 		guess();
@@ -218,44 +159,50 @@ nextNumber.onkeypress = function(event) {
 	return true;
 }
 
-
+// Function to call the next pattern
 function nextPattern() {
+	isProblem = false;
     tries = 0;
+    newProblem();
+    hint.innerHTML = (problem[2]);
+    submitButton.innerHTML = "Generate Problem";
+    difficulty.innerHTML = (problem[0]);
     result.innerHTML = "";
-    answer.innerHTML = "";
+    answer.innerHTML = (problem[1]);
     hint.style.display = "none";
     answer.style.display = "none";
     document.getElementById("display-pattern").innerHTML = "";
-    numbers = [];
     nextButton.style.display = "none";
     revealButton.style.display = "none";
     
-    callRandomFunction();
-    displayPattern();
-    answer.innerHTML = ("answer: ");
+   // displayPattern();
 }
 
-// Reveals answer
+
+
+// Reveals the answer
 
 function reveal(){
 
-answer.innerHTML = (numbers[numbers.length-1]);
+answer.innerHTML = (problem[1]);
 answer.style.display = "block";
 sound_hint.play();
 
 }
 
-// how to
+//Hide How-To Instructions
 document.getElementById("hide-instructions").onclick = function(e) {
     e.preventDefault;
     document.getElementById("how-to-container").classList.toggle("hidden")
 }
 
-var xValues = ["Wins", "Tries"];
+
+// Pie Chart to show statistics
+var xValues = ["Correct", "Incorrect"];
 var yValues = [0, 0];
 var barColors = [
-  "#FF4141",
-  "#418CFF"
+  "#418CFF",
+  "#FF4141"
 ];
 
 new Chart("myChart", {
@@ -270,7 +217,7 @@ new Chart("myChart", {
   options: {
     title: {
       display: true,
-      text: "Game Statistics"
+      text: "Statistics"
     }
   }
 });

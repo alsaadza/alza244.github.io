@@ -1,84 +1,84 @@
 Integration Practice Problems,Answer,Hint
- (3x^2 - 2x + 5) dx,x^3 - x^2 + 5x + C,Apply the power rule for integration.
- (sin(x) + cos(x)) dx,-cos(x) + sin(x) + C,Remember the integral of sine and cosine functions.
- (e^x + 1/x) dx,e^x + ln,x
- (2x^3 + 3x^2 - 4x + 1) dx,(1/2)x^4 + x^3 - 2x^2 + x + C,Integrate each term separately.
- (sec^2(x) + tan(x)) dx,tan(x) + sec(x) + C,Consider the derivatives of secant and tangent.
- (sqrt(x) + 1/x^2) dx,(2/3)x^(3/2) - 1/x + C,Use the power rule for integration and the negative power rule.
- (3sin(x) - 2cos(x)) dx,-3cos(x) - 2sin(x) + C,Apply the integral rules for sine and cosine functions.
- (e^x + e^(-x)) dx,e^x - e^(-x) + C,Separate the terms and integrate them separately.
- (x^2 + 2x + 3) dx,(1/3)x^3 + x^2 + 3x + C,Use the power rule for integration.
- (3e^x - 4/x) dx,3e^x - 4ln,x
- (cos(2x) + 1/(1+x^2)) dx,(1/2)sin(2x) + arctan(x) + C,Use trigonometric and inverse trigonometric functions.
- (x^3 - x^2 + x - 1) dx,(1/4)x^4 - (1/3)x^3 + (1/2)x^2 - x + C,Integrate each term separately.
- (sec(x)tan(x) + csc(x)cot(x)) dx,sec(x) + csc(x) + C,Use trigonometric identities.
- (e^(2x) + 3cos(x)) dx,(1/2)e^(2x) + 3sin(x) + C,Integrate each term separately.
- (1 + tan(x)) dx,x + ln,sec(x)
- (x^4 + 2x^2 + 1) dx,(1/5)x^5 + (2/3)x^3 + x + C,Use the power rule for integration.
- (1/x + e^(-x)) dx,ln,x
- (sec(x) - tan(x)) dx,ln,sec(x) + tan(x)
- (3x^2 + 2x + 1) e^x dx,(3x^2 + 8x + 14)e^x + C,Use integration by parts.
- (x^3 + x^2 - x + 1) sin(x) dx,-x^3cos(x) - 2x^2cos(x) + 2xsin(x) + cos(x) + C,Use integration by parts.
- (x^2 + x + 1) cos(x) dx,(x^2 - 2x + 2)sin(x) + C,Use integration by parts.
- (2x + 1)/(x^2 + x) dx,ln,x^2 + x
- (tan(x)sec^2(x)) dx,sec(x) + C,Recall the derivatives of tangent and secant.
- (e^(2x) - e^x) dx,(1/2)e^(2x) - e^x + C,Integrate each term separately.
- (ln(x) + 1/x) dx,xln(x) - x + C,Integrate each term separately.
- (x^2 + 3x + 2)/(x + 1) dx,(1/2)x^2 + (5/2)x + 1 + ln,x + 1
- (x^2 - 4)/(x - 2) dx,(1/3)x^3 - 8ln,x - 2
- (sin^2(x) + cos^2(x)) dx,x + C,Remember the Pythagorean identity.
- (e^x + 1)/(e^x - 1) dx,ln,e^x - 1
- (sin(x)cos(x)) dx,(1/2)sin^2(x) + C,Use the double angle identity.
- (1/(x^2 + 4)) dx,(1/2)arctan(x/2) + C,Rewrite the integrand using trigonometric functions.
- (1 + e^x)/(1 - e^x) dx,x + ln,1 - e^x
- (2x^3 + x^2 - 3x + 1) e^x dx,(2x^3 - 4x^2 - 10x + 18)e^x + C,Use integration by parts.
- (cos(x) - sin(x)) dx,sin(x) + cos(x) + C,Remember the derivatives of sine and cosine.
- (e^x + e^(2x)) dx,e^x + (1/2)e^(2x) + C,Integrate each term separately.
- (1 + sin(x))^2 dx,x - cos(x) + (1/2)sin(2x) + C,Expand the square of the binomial.
- (x^3 + x^2 + x + 1)/(x^2 + x + 1) dx,x + 1 + ln,x^2 + x + 1
- (x^2 - 2x + 1)/(x - 1) dx,(1/3)x^3 - 3x^2 + 8x - 8ln,x - 1
- (2 + e^x)/(e^x - 1) dx,x + 2ln,e^x - 1
- (1 + cos(x))/(sin(x) + cos(x)) dx,ln,sin(x) + cos(x)
- (1 - 2sin(x)) dx,x + 2cos(x) + C,Integrate each term separately.
- (2x^3 - x^2 + 3x - 1) e^x dx,(2x^3 - 6x^2 + 9x - 13)e^x + C,Use integration by parts.
- (e^x + e^(-x))/(e^x - e^(-x)) dx,ln,e^x - e^(-x)
- (sin(x) - cos(x)) dx,-cos(x) - sin(x) + C,Integrate each term separately.
- (3x^2 - 2x + 5)/(x^3 - x^2 + 1) dx,ln,x^3 - x^2 + 1
- (x^3 + x^2 - x + 1)/(x - 1) dx,(1/4)x^4 + (1/3)x^3 + (1/2)x^2 - x + 4ln,x - 1
- (2e^x - 3/x) dx,2e^x - 3ln,x
- (cos(x)sin(x)) dx,(1/2)sin^2(x) + C,Use the double angle identity.
- (1 + e^(2x))/(1 - e^(2x)) dx,(1/2)x + ln,1 - e^(2x)
- (2x^2 + 3x + 4)/(x^2 + x + 1) dx,(3/2)ln,x^2 + x + 1
- (1 - sin(x))^2 dx,x + sin(x) - (1/2)sin(2x) + C,Expand the square of the binomial.
- (x^3 - 4x^2 + 6x - 4)/(x^2 - 2x + 2) dx,(1/2)x^2 - 2x + 7 + (1/2)ln,x^2 - 2x + 2
- (3x^2 + 4x + 2)/(x^3 + 2x^2 + x) dx,ln,x^3 + 2x^2 + x
- (sin(x) - cos(x)) e^x dx,(1/2)e^x(sin(x) - cos(x)) - (1/2)e^x + C,Use integration by parts.
- (x^3 - 2x^2 + x - 1) e^x dx,(1/2)x^3 - x^2 + 3x - 5 + (1/2)e^x + C,Use integration by parts.
- (cos(x) - sin(x))^2 dx,x - sin(x)cos(x) - cos(x) + C,Expand the square of the binomial.
- (1 + tan(x))^2 dx,x + tan(x) - ln,cos(x)
- (x^3 + 2x^2 + x + 1)/(x^2 + 1) dx,(1/2)x^2 + (3/2)x + arctan(x) + C,Use long division to simplify the integrand.
- (x^2 + 1)/(x^4 + x^2 + 1) dx,(1/2)arctan(x^2 + 1) + C,Rewrite the integrand using trigonometric functions.
- (e^x + e^(-x) + 1) dx,e^x - e^(-x) + x + C,Integrate each term separately.
- (x^2 + 2x + 2)/(x^3 + x^2 + x + 1) dx,ln,x^3 + x^2 + x + 1
- (sin(x) + cos(x))^2 dx,x + sin(x)cos(x) + C,Expand the square of the binomial.
- (1 + cos(x))/(sin(x) - cos(x)) dx,ln,sin(x) - cos(x)
- (3e^(2x) + 4/x) dx,(3/2)e^(2x) + 4ln,x
- (x^4 + 1)/(x^2 + 1) dx,(1/2)x^3 + x - arctan(x) + C,Use long division to simplify the integrand.
- (sin(x) + cos(x)) e^x dx,(1/2)e^x(sin(x) + cos(x)) + C,Use integration by parts.
- (x^3 + x^2 - x + 1)/(x^2 - 1) dx,(1/4)x^4 + (1/3)x^3 + (1/2)x^2 - x + 2ln,x - 1
- (1 - 2cos(x)) dx,x - 2sin(x) + C,Integrate each term separately.
- (e^x + 1)/(e^x + e^(-x)) dx,ln,e^x + e^(-x)
- (2x^3 + 3x^2 + 4x + 5)/(x^2 + x + 1) dx,(3/2)ln,x^2 + x + 1
- (1 + e^(-x))/(1 - e^(-x)) dx,x + ln,1 - e^(-x)
- (cos(x) - sin(x)) e^x dx,(1/2)e^x(cos(x) - sin(x)) + C,Use integration by parts.
- (x^3 - 2x^2 + x - 1) e^x dx,(1/2)x^3 - x^2 + 3x - 5 + (1/2)e^x + C,Use integration by parts.
- (sin(x) - cos(x))^2 dx,x - sin(x)cos(x) + cos(x) + C,Expand the square of the binomial.
- (1 + tan(x))^2 dx,x + tan(x) - ln,cos(x)
- (x^3 + 2x^2 + x + 1)/(x^2 + 1) dx,(1/2)x^2 + (3/2)x + arctan(x) + C,Use long division to simplify the integrand.
- (x^2 + 1)/(x^4 + x^2 + 1) dx,(1/2)arctan(x^2 + 1) + C,Rewrite the integrand using trigonometric functions.
- (e^x + e^(-x) + 1) dx,e^x - e^(-x) + x + C,Integrate each term separately.
- (x^2 + 2x + 2)/(x^3 + x^2 + x + 1) dx,ln,x^3 + x^2 + x + 1
- (sin(x) + cos(x))^2 dx,x + sin(x)cos(x) + C,Expand the square of the binomial.
- (1 + cos(x))/(sin(x) - cos(x)) dx,ln,sin(x) - cos(x)
- (3e^(2x) + 4/x) dx,(3/2)e^(2x) + 4ln,x
- (x^4 + 1)/(x^2 + 1) dx,(1/2)x^3 + x - arctan(x) + C,Use long division to simplify the integrand.
+º (3x^2 - 2x + 5) dx,x^3 - x^2 + 5x + C,Apply the power rule for integration.
+º (sin(x) + cos(x)) dx,-cos(x) + sin(x) + C,Remember the integral of sine and cosine functions.
+º (e^x + 1/x) dx,e^x + ln,x
+º (2x^3 + 3x^2 - 4x + 1) dx,(1/2)x^4 + x^3 - 2x^2 + x + C,Integrate each term separately.
+º (sec^2(x) + tan(x)) dx,tan(x) + sec(x) + C,Consider the derivatives of secant and tangent.
+º (sqrt(x) + 1/x^2) dx,(2/3)x^(3/2) - 1/x + C,Use the power rule for integration and the negative power rule.
+º (3sin(x) - 2cos(x)) dx,-3cos(x) - 2sin(x) + C,Apply the integral rules for sine and cosine functions.
+º (e^x + e^(-x)) dx,e^x - e^(-x) + C,Separate the terms and integrate them separately.
+º (x^2 + 2x + 3) dx,(1/3)x^3 + x^2 + 3x + C,Use the power rule for integration.
+º (3e^x - 4/x) dx,3e^x - 4ln,x
+º (cos(2x) + 1/(1+x^2)) dx,(1/2)sin(2x) + arctan(x) + C,Use trigonometric and inverse trigonometric functions.
+º (x^3 - x^2 + x - 1) dx,(1/4)x^4 - (1/3)x^3 + (1/2)x^2 - x + C,Integrate each term separately.
+º (sec(x)tan(x) + csc(x)cot(x)) dx,sec(x) + csc(x) + C,Use trigonometric identities.
+º (e^(2x) + 3cos(x)) dx,(1/2)e^(2x) + 3sin(x) + C,Integrate each term separately.
+º (1 + tan(x)) dx,x + ln,sec(x)
+º (x^4 + 2x^2 + 1) dx,(1/5)x^5 + (2/3)x^3 + x + C,Use the power rule for integration.
+º (1/x + e^(-x)) dx,ln,x
+º (sec(x) - tan(x)) dx,ln,sec(x) + tan(x)
+º (3x^2 + 2x + 1) e^x dx,(3x^2 + 8x + 14)e^x + C,Use integration by parts.
+º (x^3 + x^2 - x + 1) sin(x) dx,-x^3cos(x) - 2x^2cos(x) + 2xsin(x) + cos(x) + C,Use integration by parts.
+º (x^2 + x + 1) cos(x) dx,(x^2 - 2x + 2)sin(x) + C,Use integration by parts.
+º (2x + 1)/(x^2 + x) dx,ln,x^2 + x
+º (tan(x)sec^2(x)) dx,sec(x) + C,Recall the derivatives of tangent and secant.
+º (e^(2x) - e^x) dx,(1/2)e^(2x) - e^x + C,Integrate each term separately.
+º (ln(x) + 1/x) dx,xln(x) - x + C,Integrate each term separately.
+º (x^2 + 3x + 2)/(x + 1) dx,(1/2)x^2 + (5/2)x + 1 + ln,x + 1
+º (x^2 - 4)/(x - 2) dx,(1/3)x^3 - 8ln,x - 2
+º (sin^2(x) + cos^2(x)) dx,x + C,Remember the Pythagorean identity.
+º (e^x + 1)/(e^x - 1) dx,ln,e^x - 1
+º (sin(x)cos(x)) dx,(1/2)sin^2(x) + C,Use the double angle identity.
+º (1/(x^2 + 4)) dx,(1/2)arctan(x/2) + C,Rewrite the integrand using trigonometric functions.
+º (1 + e^x)/(1 - e^x) dx,x + ln,1 - e^x
+º (2x^3 + x^2 - 3x + 1) e^x dx,(2x^3 - 4x^2 - 10x + 18)e^x + C,Use integration by parts.
+º (cos(x) - sin(x)) dx,sin(x) + cos(x) + C,Remember the derivatives of sine and cosine.
+º (e^x + e^(2x)) dx,e^x + (1/2)e^(2x) + C,Integrate each term separately.
+º (1 + sin(x))^2 dx,x - cos(x) + (1/2)sin(2x) + C,Expand the square of the binomial.
+º (x^3 + x^2 + x + 1)/(x^2 + x + 1) dx,x + 1 + ln,x^2 + x + 1
+º (x^2 - 2x + 1)/(x - 1) dx,(1/3)x^3 - 3x^2 + 8x - 8ln,x - 1
+º (2 + e^x)/(e^x - 1) dx,x + 2ln,e^x - 1
+º (1 + cos(x))/(sin(x) + cos(x)) dx,ln,sin(x) + cos(x)
+º (1 - 2sin(x)) dx,x + 2cos(x) + C,Integrate each term separately.
+º (2x^3 - x^2 + 3x - 1) e^x dx,(2x^3 - 6x^2 + 9x - 13)e^x + C,Use integration by parts.
+º (e^x + e^(-x))/(e^x - e^(-x)) dx,ln,e^x - e^(-x)
+º (sin(x) - cos(x)) dx,-cos(x) - sin(x) + C,Integrate each term separately.
+º (3x^2 - 2x + 5)/(x^3 - x^2 + 1) dx,ln,x^3 - x^2 + 1
+º (x^3 + x^2 - x + 1)/(x - 1) dx,(1/4)x^4 + (1/3)x^3 + (1/2)x^2 - x + 4ln,x - 1
+º (2e^x - 3/x) dx,2e^x - 3ln,x
+º (cos(x)sin(x)) dx,(1/2)sin^2(x) + C,Use the double angle identity.
+º (1 + e^(2x))/(1 - e^(2x)) dx,(1/2)x + ln,1 - e^(2x)
+º (2x^2 + 3x + 4)/(x^2 + x + 1) dx,(3/2)ln,x^2 + x + 1
+º (1 - sin(x))^2 dx,x + sin(x) - (1/2)sin(2x) + C,Expand the square of the binomial.
+º (x^3 - 4x^2 + 6x - 4)/(x^2 - 2x + 2) dx,(1/2)x^2 - 2x + 7 + (1/2)ln,x^2 - 2x + 2
+º (3x^2 + 4x + 2)/(x^3 + 2x^2 + x) dx,ln,x^3 + 2x^2 + x
+º (sin(x) - cos(x)) e^x dx,(1/2)e^x(sin(x) - cos(x)) - (1/2)e^x + C,Use integration by parts.
+º (x^3 - 2x^2 + x - 1) e^x dx,(1/2)x^3 - x^2 + 3x - 5 + (1/2)e^x + C,Use integration by parts.
+º (cos(x) - sin(x))^2 dx,x - sin(x)cos(x) - cos(x) + C,Expand the square of the binomial.
+º (1 + tan(x))^2 dx,x + tan(x) - ln,cos(x)
+º (x^3 + 2x^2 + x + 1)/(x^2 + 1) dx,(1/2)x^2 + (3/2)x + arctan(x) + C,Use long division to simplify the integrand.
+º (x^2 + 1)/(x^4 + x^2 + 1) dx,(1/2)arctan(x^2 + 1) + C,Rewrite the integrand using trigonometric functions.
+º (e^x + e^(-x) + 1) dx,e^x - e^(-x) + x + C,Integrate each term separately.
+º (x^2 + 2x + 2)/(x^3 + x^2 + x + 1) dx,ln,x^3 + x^2 + x + 1
+º (sin(x) + cos(x))^2 dx,x + sin(x)cos(x) + C,Expand the square of the binomial.
+º (1 + cos(x))/(sin(x) - cos(x)) dx,ln,sin(x) - cos(x)
+º (3e^(2x) + 4/x) dx,(3/2)e^(2x) + 4ln,x
+º (x^4 + 1)/(x^2 + 1) dx,(1/2)x^3 + x - arctan(x) + C,Use long division to simplify the integrand.
+º (sin(x) + cos(x)) e^x dx,(1/2)e^x(sin(x) + cos(x)) + C,Use integration by parts.
+º (x^3 + x^2 - x + 1)/(x^2 - 1) dx,(1/4)x^4 + (1/3)x^3 + (1/2)x^2 - x + 2ln,x - 1
+º (1 - 2cos(x)) dx,x - 2sin(x) + C,Integrate each term separately.
+º (e^x + 1)/(e^x + e^(-x)) dx,ln,e^x + e^(-x)
+º (2x^3 + 3x^2 + 4x + 5)/(x^2 + x + 1) dx,(3/2)ln,x^2 + x + 1
+º (1 + e^(-x))/(1 - e^(-x)) dx,x + ln,1 - e^(-x)
+º (cos(x) - sin(x)) e^x dx,(1/2)e^x(cos(x) - sin(x)) + C,Use integration by parts.
+º (x^3 - 2x^2 + x - 1) e^x dx,(1/2)x^3 - x^2 + 3x - 5 + (1/2)e^x + C,Use integration by parts.
+º (sin(x) - cos(x))^2 dx,x - sin(x)cos(x) + cos(x) + C,Expand the square of the binomial.
+º (1 + tan(x))^2 dx,x + tan(x) - ln,cos(x)
+º (x^3 + 2x^2 + x + 1)/(x^2 + 1) dx,(1/2)x^2 + (3/2)x + arctan(x) + C,Use long division to simplify the integrand.
+º (x^2 + 1)/(x^4 + x^2 + 1) dx,(1/2)arctan(x^2 + 1) + C,Rewrite the integrand using trigonometric functions.
+º (e^x + e^(-x) + 1) dx,e^x - e^(-x) + x + C,Integrate each term separately.
+º (x^2 + 2x + 2)/(x^3 + x^2 + x + 1) dx,ln,x^3 + x^2 + x + 1
+º (sin(x) + cos(x))^2 dx,x + sin(x)cos(x) + C,Expand the square of the binomial.
+º (1 + cos(x))/(sin(x) - cos(x)) dx,ln,sin(x) - cos(x)
+º (3e^(2x) + 4/x) dx,(3/2)e^(2x) + 4ln,x
+º (x^4 + 1)/(x^2 + 1) dx,(1/2)x^3 + x - arctan(x) + C,Use long division to simplify the integrand.

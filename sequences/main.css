@@ -36,7 +36,7 @@ h1 {
 }
 
 #next-number {
-    width: 2em;
+    width: 25em;
     border: 1.5px solid;
     font-size: 12pt;
     border-radius: .35em;
@@ -156,7 +156,7 @@ h1 {
 }
 
 #difficulty:before {
-    content: "Difficulty: ";
+    content: "Find the next number: ";
 }
 
 #difficulty.easy {
@@ -205,11 +205,11 @@ h1 {
 }
 
 #wins:before {
-    content: "Wins: "
+    content: "Correct: "
 }
 
 #total-tries:before {
-    content: "Total tries: "
+    content: "Incorrect: "
 }
 
 @media (max-width: 992px) {
