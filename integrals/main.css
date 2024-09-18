@@ -32,7 +32,7 @@ h1 {
 }
 
 .display-example span:last-of-type {
-    border: 1.5px solid crimson;
+    border: 1.5px solid #0074D9;
 }
 
 #next-number {
@@ -42,7 +42,7 @@ h1 {
     border-radius: .35em;
     padding: 1em .5em;
     transition: all .3s ease-in;
-    border-color: crimson;
+    border-color: #0074D9;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ h1 {
     outline: none;
     border: none;
     border-radius: 0;
-    box-shadow: 0 3px crimson;
+    box-shadow: 0 3px #0074D9;
 }
 
 #hint {
@@ -59,7 +59,7 @@ h1 {
 
 #hint::before {
     content: "Hint: ";
-    color: crimson;
+    color: #0074D9;
 }
 
 #hint:empty::before {
@@ -73,7 +73,7 @@ h1 {
 
 #answer::before {
     content: "Answer: ";
-    color: crimson;
+    color: #0074D9;
 }
 
 #answer:empty::before {
@@ -84,18 +84,18 @@ h1 {
     outline: none;
     background: none;
     width: 10em;
-    border-color: crimson;
+    border-color: #0074D9;
     border-width: 1.5pt;
     color:white;
     padding: 8pt;
     border-radius: 1em;
-    background-color: crimson;
+    background-color: #0074D9;
     transition: all .3s ease-in;
 }
 
 .button:hover {
     background: white;
-    color: crimson;
+    color: #0074D9;
 }
 
 #next-button {
@@ -169,7 +169,7 @@ h1 {
 }
 
 #difficulty.medium {
-    background-color: crimson;
+    background-color: #0074d9;
     color: white;
 }
 
